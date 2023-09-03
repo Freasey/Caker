@@ -1,0 +1,460 @@
+
+@font-face {
+    font-family: 'poppinsb';
+    src: url(Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: 'poppinsr';
+    src: url(Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'poppinst';
+    src: url(Poppins/Poppins-Thin.ttf);
+}
+
+
+html{
+    font-family: 'poppinsr' ;
+    background: url(kerjasama.jpg) center center no-repeat fixed ;
+    background-size: cover;
+    margin: 0;
+}
+body{
+    font-family: 'poppinsr' ;
+    margin: 0;
+}
+
+/* Navbar */
+nav{
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 0px;
+    background: #793FDF;
+    
+    transition: 0.5s all;
+}
+.turu{
+    height: 60px;
+}
+nav li{
+    cursor: pointer;
+    color: white;
+}
+.navli li:hover{
+    color: #006b6d;
+}
+
+nav h1{
+    font-family: 'poppinsb';
+    margin: 0 30px 0 0;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.navli{
+    
+    width: 100%;
+}
+.navli li{
+    list-style: none;
+    font-family: 'poppinsb';
+    padding: 18px 12px;
+    
+}
+nav ul{
+    
+    display: flex;
+    margin: 0;
+}
+
+.navliend{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;  
+    padding: 0;
+}
+.navliend li{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px 10px 0 0;
+    width: 100px;
+    height: 40px;
+    background-color: #FFFD8C;
+    list-style: none;
+    font-family: 'poppinsb';
+    font-size: 15px;
+    color: #323232;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.slider{
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
+    display: none;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.slider hr{
+    margin: 6px;
+    width: 36px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+#slidernav{
+    display: none;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    justify-content: center;
+    align-items: center;
+}
+#slidernav ul{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#slidernav li{
+    cursor: pointer;
+    text-align: center;
+    list-style: none;
+    font-size: 5vh;
+}
+/* Navbar */
+
+/* Textbox */
+#textbox{
+    border: 1px solid #97FFF4; ;
+    /* width: 58vw;
+    height: 12vh; */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vh;
+}
+#textbox input{
+    padding: 0 20px;
+    font-size: 2vh;
+    color: black;
+    border: 0;
+    height: 6vh;
+    width: 35vw;
+    /* border-radius: 1vh; */
+    outline: none;
+    margin: 0;
+}
+#search{
+    width: 10vw;
+    height: 6vh;
+    border: 1px solid #7091F5;
+    background-color: #7091F5;
+    border-radius: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#search h2{
+    font-family: 'poppinst';
+   margin: 0;
+   font-size: 2.5vh;
+   color: white;
+}
+#search1{
+    padding: 0 20px;
+    width: 35vw;
+    height: 6vh;
+    border: 1px solid #7091F5;
+    background-color: #7091F5;
+    border-radius: 0 0 1vh 1vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#search1 h2{
+    font-family: 'poppinst';
+   margin: 0;
+   font-size: 2.5vh;
+   color: white;
+}
+#filterbar{
+    display: flex;
+    width: auto;
+}
+.lokasi{
+    border-top: 2px solid transparent;
+    background-color: white;
+    text-align: center;
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    font-family: 'poppinsb';
+    height: 6vh;
+    outline: none;
+    width: 20vw;
+    cursor: pointer;
+    direction: rtl;
+}
+#filterbar img{
+    transition: 1s all;
+  -webkit-filter: brightness(0) invert(0);
+  filter:brightness(0) invert(0) ;
+  position: absolute;
+  width: 2vh;
+  height: auto;
+  margin: 12px;
+}
+.lokasi option{
+    padding: 2vh; 
+    background-color: white;
+    transition: 0.5s all;
+}
+.lokasi option:hover{
+    color: white;
+    padding: 2vh;
+    background-color: #323232;
+}
+.sats{
+    width:20vw; 
+    height: 6vh;
+}
+.blackopa{
+    width: auto;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blackopa h1{
+    text-align: center;
+    font-size: 7vh;
+}
+/* Textbox */
+
+/* Profesibox */
+#profesibox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    opacity: 0;
+    transition: 1s all;
+}
+.profsbox{
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    background-color: white;
+    width: 300px;
+    height: 210px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.profsbox h3{
+    font-family: 'poppinst';
+    margin: 0;
+}
+.profsbox img{
+    transition: 0.5s all;
+    margin: 20px auto 0 auto;
+    width: 70px;
+    height: fit-content;
+}
+/* Profesibox */
+
+/* Lowongan */
+.lowongan{
+    position: relative;
+    width:auto;
+    height: fit-content;
+    background-color: rgb(241, 241, 241);
+    padding: 5vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.lowongan img{
+    display: inline;
+}
+.lowonganbox{
+    display: inline-block;
+    margin: 50px 10px 0 10px;
+    position: relative;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.imglow{
+    background-color: white;
+    width: 75px;
+    height: 75px;
+    margin: -40px auto 85px auto;
+    border-radius: 10px;
+    font-family: 'poppinst';
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    padding: 5px;
+}
+.imglow img{
+    width: 100%;
+    height: auto;
+}
+.lowbox{
+    display: flex; 
+    margin: 0; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lowbox h3{
+    font-family: 'poppinsr';
+    margin: 0; 
+    color: #793FDF;
+}
+.lowbox h5{
+    font-family: 'poppinst';
+    margin: 0; 
+}
+.lowbox hr{
+    background-color: #793FDF;
+    height: 1px;
+    width: 220px;
+    margin: 15px 0 0 0;
+}
+.tablowongan{
+    position: absolute;
+    left: 0;
+    right: 0;
+    white-space: nowrap;
+}
+.lowonganuts{
+    position: relative;
+    height: 400px;
+    overflow-x: scroll;
+    transition: 1s all;
+}
+.tutor{
+    width: 40vh;
+    height: 65vh;
+    background-color: white;
+    margin: 10px 10px 100px 10px;
+    border-radius: 5px;
+    transition: 0.5s all;
+    display: flex;
+    flex-direction: column;
+    color: #323232;
+}
+.tutor:hover{
+    background-color: #FFFD8C;
+    
+}
+.tutor h1{
+    font-family: 'poppinst';
+    font-size: 30px;
+}
+.tutor h3{
+    font-family: 'poppinst';
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+.tutor img{
+    transition: 0.5s all;
+    margin: 70px auto 0 auto;
+    width: 70px;
+    height: fit-content;
+}
+
+
+@media only screen and (max-width: 1060px) {
+    #textbox{
+        border-radius: 1vh 1vh 0 0 ;
+        border: 1px solid transparent ;
+    }
+    #textbox input{
+        border-radius: 1vh 1vh 0 0 !important;
+    }
+    #search1{
+        display: flex;
+    }
+    #search{
+       display: none;
+    }
+
+    #filterbar{
+        border: none;
+        background-color: white;
+        padding: 0 20px;
+    }
+    nav li{ display: none !important;
+    }
+    .slider{
+        display: inline;
+    }
+    .navliend li{
+        padding: 0;
+    }
+    #filterbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .lokasi{
+        border: 0 !important;
+        border-radius: 0 !important;
+        width: 35vw;
+    }
+    .sats{
+        width: 35vw;
+    }
+    .blackopa h1{
+        text-align: center;
+        font-size: 5vh;
+        color: white;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    #textbox input{
+        width: 30vh;
+    }
+    .blackopa h1{
+        text-align: center;
+        font-size: 4vh;
+        color: white;
+    }
+    .lokasi{
+        border: 0 !important;
+        border-radius: 0 !important;
+        width: 30vh;
+    }
+    .sats{
+        width: 30vh;
+    }
+    #search1{
+        width: 30vh;
+    }
+  }
