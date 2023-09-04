@@ -6,7 +6,7 @@ window.addEventListener('scroll',function () {
         document.querySelector('html').style.backgroundSize='cover';
         
     }
-    if (window.scrollY > 700) {
+    if (window.scrollY > 1000) {
         document.querySelector('html').style.background='url(Daffa%20Ardhana_Bahan/Home/dokumen.jpg) center center no-repeat fixed';
         document.querySelector('html').style.backgroundSize='cover';
     }
@@ -71,6 +71,3 @@ const profboxof=(lek)=>{
 
 
 
-
-
-document.getElementsByClassName('lowonganuts')[1].scrollTo(1000,0)
