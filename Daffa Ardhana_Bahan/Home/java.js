@@ -10,57 +10,79 @@ window.addEventListener('scroll',function () {
         document.querySelector('html').style.background='url(Daffa%20Ardhana_Bahan/Home/dokumen.jpg) center center no-repeat fixed';
         document.querySelector('html').style.backgroundSize='cover';
     }
-    if (window.scrollY > 100) {
-        document.getElementById('profesibox').style.marginTop='-140px';
-        document.getElementById('profesibox').style.opacity='1';
+    if (window.scrollY > 3000) {
+        if (screen.width > 1000) {
+          document.querySelector('html').style.background='url(Daffa%20Ardhana_Bahan/Home/069372200_1662512644-Khaby-2.webp) center center no-repeat fixed';
+          document.querySelector('html').style.backgroundSize='cover';  
+        }  
     }
-    
+    if (window.scrollY > 6000) {
+        if (screen.width < 1000) {
+          document.querySelector('html').style.background='url(Daffa%20Ardhana_Bahan/Home/069372200_1662512644-Khaby-2.webp) center center no-repeat fixed';
+          document.querySelector('html').style.backgroundSize='cover';  
+        }  
+    }
+
 
 
 })
+
+
 const navslider=document.getElementById('slidernav');
 const slider= document.getElementsByClassName('slider')[0];
+const slidhr=document.querySelectorAll('.slider hr');
 const slide =() =>{
-    
+    document.querySelector('html').style.overflowY='hidden'
     navslider.style.display='flex'
     slider.setAttribute('onclick', 'slideroff()')
+    slidhr[0].style.transform='translate(0,6px) rotate(45deg)'
+    slidhr[1].style.transform='translate(0,-6px) rotate(45deg)'
+    slidhr[2].style.transform='translate(0,-19px) rotate(-45deg)'
+    setTimeout(() => {
+        document.querySelectorAll('#slidernav ul')[0].style.transform='translate(0px,0px)'; 
+        navslider.style.backgroundColor= 'rgba(0, 0, 0, 0.5)';
+    }, 100);
+    
 }
 const slideroff=()=>{
-    navslider.style.display='none'
+    document.querySelector('html').style.overflowY='scroll'
+    document.querySelectorAll('#slidernav ul')[0].style.transform='translate(500px,0)'; 
     slider.setAttribute('onclick', 'slide()')
+    slidhr[0].style.transform='translate(0,0px) rotate(0deg)'
+    slidhr[1].style.transform='translate(0,0px) rotate(0deg)'
+    slidhr[2].style.transform='translate(0,0px) rotate(0deg)'
+    navslider.style.backgroundColor= 'rgba(0, 0, 0, 0)';
+    setTimeout(() => {
+        navslider.style.display='none'
+    }, 500);
+    
 }
 
 const slideon=(hx)=>{
     if (hx===0) {
-        document.querySelectorAll('#filterbar img')[0].style.filter='brightness(0) invert(1)' ;
-        document.getElementsByClassName('lokasi')[0].style.height='25vh';
-        document.querySelectorAll('#filterbar img')[0].style.marginLeft='-54px' ;
-        document.querySelectorAll('#filterbar img')[0].style.transform='rotate(90deg)';
+        
+        document.getElementsByClassName('lokasi')[0].style.height='25vh'
     }
     if (hx===1) {
         document.getElementsByClassName('lokasi')[0].style.height='6vh';
-        document.querySelectorAll('#filterbar img')[0].style.filter='brightness(0) invert(0)' ;
-        document.querySelectorAll('#filterbar img')[0].style.marginLeft='12px' ;
-        document.querySelectorAll('#filterbar img')[0].style.transform='rotate(180deg)';
+        
     }
 }
 const slideon1=(fx)=>{
     if (fx===0) {
-        document.querySelectorAll('#filterbar img')[1].style.filter='brightness(0) invert(1)' ;
+       
         document.getElementsByClassName('lokasi')[1].style.height='25vh';
-        document.querySelectorAll('#filterbar img')[1].style.marginLeft='36px' ;
-        document.querySelectorAll('#filterbar img')[1].style.transform='rotate(90deg)';
+        
     }
     if (fx===1) {
-        document.querySelectorAll('#filterbar img')[1].style.filter='brightness(0) invert(0)' ;
+        
         document.getElementsByClassName('lokasi')[1].style.height='6vh';
-        document.querySelectorAll('#filterbar img')[1].style.marginLeft='-30px' ;
-        document.querySelectorAll('#filterbar img')[1].style.transform='rotate(0)';
+        
     }
 }
 const profbox=(lek)=>{
         document.querySelectorAll('.profsbox img')[lek].style.filter='brightness(0) invert(1)';
-        document.querySelectorAll('.profsbox')[lek].style.background='#7091F5';
+        document.querySelectorAll('.profsbox')[lek].style.background='#2D4059';
         document.querySelectorAll('.profsbox')[lek].style.color='white';
 }
 const profboxof=(lek)=>{
@@ -68,6 +90,17 @@ const profboxof=(lek)=>{
     document.querySelectorAll('.profsbox')[lek].style.background='white';
     document.querySelectorAll('.profsbox')[lek].style.color='#323232';
 }
+const masukoff=()=>{
+    document.getElementById('daftar').setAttribute('onclick', 'masukon()')
+    document.getElementById('masuk').style.display='none'
+    document.querySelector('html').style.overflowY='scroll'
+}
+const masukon=()=>{
+    document.querySelector('html').style.overflowY='hidden'
+    document.getElementById('daftar').setAttribute('onclick', 'masukoff()')
+    document.getElementById('masuk').style.display='flex'
+}
+
 
 
 
