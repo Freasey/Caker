@@ -16,7 +16,7 @@ window.addEventListener('scroll',function () {
           document.querySelector('html').style.backgroundSize='cover';  
         }  
     }
-    if (window.scrollY > 6000) {
+    if (window.scrollY > 5700) {
         if (screen.width < 1000) {
           document.querySelector('html').style.background='url(Daffa%20Ardhana_Bahan/Home/069372200_1662512644-Khaby-2.webp) center center no-repeat fixed';
           document.querySelector('html').style.backgroundSize='cover';  
