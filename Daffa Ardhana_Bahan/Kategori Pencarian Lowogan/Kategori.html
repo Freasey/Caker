@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategori</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1 style="margin-left: 40px;">Caker</h1>     
+        <ul class="navli">
+            <a href="../../Daffa Ardhana_Website.html"><li>Beranda</li></a>
+            <li>Cari Lowongan</li>
+            <a href="../Perusahaan/perusahaan.html"><li>Sebagai Perusahaan</li></a>
+        </ul>
+        <ul class="navliend">
+            <a href="../Daftar/daftar.html"><li style="background-color: #FF5722;">Daftar</li></a>
+            <li onclick="masukon()" id="daftar" >Masuk</li>
+            <div onclick="slide()" class="slider">
+                <hr> <hr> <hr>
+            </div>
+        </ul>
+    </nav>
+    <div id="slidernav">
+        <ul>
+            <a href="../../Daffa Ardhana_Website.html"><li style="margin-top: 70px;">Beranda</li></a>
+            <li style=" background-color:white; width: 100%; color: #222831;">Cari Lowongan</li>
+            <a href="../Perusahaan/perusahaan.html"><li>Sebagai Perusahaan</li></a>
+            <a style="width: 100%;"  href="../Daftar/daftar.html"><li style="width: 100%; box-shadow: inset 0 0 0 5px #222831; padding: 30px 0 30px 0;">Daftar</li></a>
+            <li onclick=" slideroff();masukon();" style="width: 100%; padding: 30px 0 30px 0; background-color: #222831;">Masuk</li>
+        </ul>
+    </div>
+    <div id="masuk">
+        <ul><img onclick="masukoff()" id="silang"  src="../Home/cross-button.png" alt="">
+            <li><h1>Caker</h1></li>
+            <li><h3>Login</h3></li>
+            <li><input type="text" name="username" class="pass" placeholder="Username"></li>
+            <li><input type="text" name="pass" class="pass"placeholder="Password"></li>           
+            <li><div id="logs"><h3>Masuk</h3></div></li>
+            <div style="display: flex; align-items: center;"><hr> <h4>Opsi lain</h4> <hr></div>
+            <div style="display: flex; align-items: center;"><img src="../Home/google.png" alt=""> <img src="../Home/facebook.png" alt=""></div>
+        </ul>
+    </div>
+    <div class="blaks">
+    <div style="display: flex; align-items: center; flex-direction: column; color: white;">
+        <input type="text" placeholder="Cari Lowongan">
+    <div onclick="filt(1)" class="cars" style="background-color: #d0d0d0; "> <h2>Filter</h2></div>
+    <div class="cars"> <h2>Cari</h2></div>
+    </div>
+    </div>
+    <div class="blak">
+    <div class="filteram">
+        <div class="filterin">
+            <h1 class="juds" style="margin-top: 20px;">Menu Pencarian</h1>
+            <h1 class="juda" style="margin-top: 20px;">Kategori <img onclick="filt(0)" src="../Home/cross-button.png" alt=""></h1>
+            
+
+            <div class="filterbar">
+                <input type="text" placeholder="Cari Lowongan">
+                <div class="sats" style="z-index: 10;">
+                 <div >   
+                <select name="lokasi" class="lokasi"  onblur='this.size=1; slideon(1);' onfocus='this.size=5; slideon(0)'  onchange='this.size=1;slideon(1); this.blur();' >
+                    <option value="0">Semua Provinsi</option>
+                    <option value="1">Aceh</option>
+                    <option value="2">Sumatera Utara</option>
+                    <option value="3">Sumatera Selatan</option>
+                    <option value="4">Sumatera Barat</option>
+                    <option value="5">Bengkulu</option>
+                    <option value="6">Riau</option>
+                    <option value="7">Kepulauan Riau</option>
+                    <option value="8">Jambi </option>
+                    <option value="9">Lampung </option>
+                    <option value="10">Bangka Belitung</option>
+                    <option value="11">Kalimantan Barat</option>
+                    <option value="12">Kalimantan Timur</option>
+                    <option value="13">Kalimantan Selatan</option>
+                    <option value="14">Kalimantan Tengah</option>
+                    <option value="15">Kalimantan Utara</option>
+                    <option value="16">Banten</option>
+                    <option value="17">DKI Jakarta</option>
+                    <option value="18">Jawa Barat</option>
+                    <option value="19">Jawa Tengah</option>
+                    <option value="20">Yogyakarta</option>
+                    <option value="21">Jawa Timur</option>
+                    <option value="22">Bali </option>
+                    <option value="23">NTT</option>
+                    <option value="24">NTB</option>
+                    <option value="25">Gorontalo</option>
+                    <option value="26">Sulawesi Barat</option>
+                    <option value="27">Sulawesi Tengah</option>
+                    <option value="28">Sulawesi Utara</option>
+                    <option value="29">Sulawesi Tenggara</option>
+                    <option value="30">Sulawesi Selatan</option>
+                    <option value="31">Maluku Utara</option>
+                    <option value="32">Maluku</option>
+                    <option value="33">Papua Barat </option>
+                    <option value="34">Papua </option>
+                    <option value="35">Papua Tengah</option>
+                    <option value="36">Papua Pegunungan</option>
+                    <option value="37">Papua Selatan</option>
+                    <option value="38">Papua Barat Daya</option>
+
+                </select></div>
+            </div>
+                <div class="sats" style="z-index: 9;">
+                    <div>
+                        <select name="Profesi" class="lokasi"
+                            onfocus='this.size=5; slideon1(0)' onblur='this.size=1;slideon1(1);' onchange='this.size=1;slideon1(1); this.blur();' >
+                                <option value="0">Semua Profesi</option> 
+                                <option value="1">Manufaktur</option>
+                                <option value="2">Produk Konsumen</option>
+                                <option value="3">Konstruksi</option> 
+                                <option value="4">Pendidikan</option>  
+                                <option value="5">Farmasi</option>                   
+                                <option value="6">Telekomunikasi</option>  
+                                <option value="7">Keuangan/Bank</option> 
+                                <option value="8">Otomotif</option> 
+                            </select>
+            </div>   
+            </div>
+            <div class="cari"> <h2>Cari</h2></div> 
+            <hr>
+            </div>
+            <h1>Tampilkan Berdasarkan</h1>
+            <div class="filterbar" style="justify-content: center;"> 
+                <div class="btn">
+                    <input id="prop1a" type="radio" name="rata1" checked >
+                    <label for="prop1a"><h2>Terbaru</h2></label>
+                    <input id="prop1b" type="radio" name="rata1" >
+                    <label for="prop1b"><h2>Sesuai</h2></label>
+                </div>
+                <hr>
+                </div>
+            <h1>Tampilkan Berdasarkan</h1>
+            <div class="filterbar" style="align-items: start;"> 
+                <div class="btns">
+                    <div style="display: flex;"> 
+                        <input id="prop3a" type="checkbox" name="rats1" >
+                            <label for="prop3a"></label><h2>Temporer</h2></div>
+                    <div style="display: flex;"> 
+                        <input id="prop3b" type="checkbox" name="rats2" >
+                            <label for="prop3b"></label><h2>Magang</h2></div>                   
+                    <div style="display: flex;">
+                        <input id="prop3c" type="checkbox" name="rats3" ><label for="prop3c">
+                            </label><h2>Kontrak</h2></div>        
+                    <div style="display: flex;">
+                        <input id="prop3d" type="checkbox" name="rats4" >
+                            <label for="prop3d"></label><h2>Paruh Waktu</h2></div> 
+                    <div style="display: flex;">
+                        <input id="prop3e" type="checkbox" name="rats5" >
+                            <label for="prop3e"></label><h2>Penuh Waktu</h2></div> 
+                    
+                </div>
+                <hr>
+                </div>
+                <h1>Pengalaman</h1>
+            <div class="filterbar" style="align-items: start;"> 
+                <div class="btns">
+                    <div style="display: flex;"> 
+                        <input id="prop4a" type="checkbox" name="ratd1" >
+                            <label for="prop4a"></label><h2>Kurang dari setahun</h2></div>
+                    <div style="display: flex;"> 
+                        <input id="prop4b" type="checkbox" name="ratd2" >
+                            <label for="prop4b"></label><h2>1-3 Tahun</h2></div>                   
+                    <div style="display: flex;">
+                        <input id="prop4c" type="checkbox" name="ratd3" >
+                        <label for="prop4c"></label><h2>3-5 Tahun</h2></div>        
+                    <div style="display: flex;">
+                        <input id="prop4d" type="checkbox" name="ratd4" >
+                            <label for="prop4d"></label><h2>5-10 Tahun</h2></div> 
+                    <div style="display: flex;">
+                        <input id="prop4e" type="checkbox" name="ratd5" >
+                            <label for="prop4e"></label><h2>Lebih dari 10 Tahun</h2></div> 
+                    
+                </div>
+                <hr>
+                </div>
+                <h1>Tanggal diperbarui</h1>
+            <div class="filterbar" style="align-items: start;"> 
+                <div class="btns">
+                    <div style="display: flex;"> 
+                        <input id="prop5a" type="checkbox" name="rats1" >
+                            <label for="prop5a"></label><h2>24 jam Terakhir</h2></div>
+                    <div style="display: flex;"> 
+                        <input id="prop5b" type="checkbox" name="rats2" >
+                            <label for="prop5b"></label><h2>Seminggu Terakhir</h2></div>                   
+                    <div style="display: flex;">
+                        <input id="prop5c" type="checkbox" name="rats3" ><label for="prop5c">
+                            </label><h2>Sebulan Terakhir</h2></div>        
+                    <div style="display: flex;">
+                        <input id="prop5d" type="checkbox" name="rats4" >
+                            <label for="prop5d"></label><h2>Lebih dari 10 Tahun</h2></div> 
+                    <div style="display: flex;">
+                        <input id="prop5e" type="checkbox" name="rats5" >
+                            <label for="prop5e"></label><h2>Kapan Saja</h2></div> 
+                    
+                </div>
+                </div></div></div></div>
+                
+                <div class="lowongan">
+                    <div class="lowongan" style="margin: 0; padding: 0;">
+                        <div class="lowonganbox">
+                            <div class="lowbox"> 
+                            <div class="imglow"> <img src="../Home/download.png" alt=""></div> 
+                                <h5>PT Asuransi Jiwa Astra</h5> 
+                                <h3>IT Internal Auditor</h3> 
+                                <h5>Jakarta Selatan</h5> 
+                                <h5 style="color: #FF5722;">Gaji Kompetitif</h5>
+                                <hr>
+                                <div style="display: flex; flex-direction: row;"><h5 style="margin-right: 45px;">4 hari yang lalu</h5> <h5>Penuh Waktu</h5></div>
+                            </div>
+                        </div>
+                        <div class="lowonganbox"><div class="lowbox"> 
+                            <div class="imglow"><img src="../Home/download.png" alt=""></div> 
+                            <h5>PT Asuransi Jiwa Astra</h5> 
+                                <h3>IT Internal Auditor</h3> 
+                                <h5>Jakarta Selatan</h5> 
+                                <h5 style="color: #FF5722;">Gaji Kompetitif</h5>
+                                <hr>
+                                <div style="display: flex; flex-direction: row;"><h5 style="margin-right: 45px;">4 hari yang lalu</h5> <h5>Penuh Waktu</h5></div>
+                            </div></div>
+                        <div class="lowonganbox"><div class="lowbox"> 
+                            <div class="imglow"><img src="../Home/download.png" alt=""></div> 
+                            <h5>PT Asuransi Jiwa Astra</h5> 
+                                <h3>IT Internal Auditor</h3> 
+                                <h5>Jakarta Selatan</h5> 
+                                <h5 style="color: #FF5722;">Gaji Kompetitif</h5>
+                                <hr>
+                                <div style="display: flex; flex-direction: row;"><h5 style="margin-right: 45px;">4 hari yang lalu</h5> <h5>Penuh Waktu</h5></div>
+                            </div></div>
+                        <div class="lowonganbox"><div class="lowbox"> 
+                            <div class="imglow"><img src="../Home/download.png" alt=""></div> 
+                            <h5>PT Asuransi Jiwa Astra</h5> 
+                                <h3>IT Internal Auditor</h3> 
+                                <h5>Jakarta Selatan</h5> 
+                                <h5 style="color: #FF5722;">Gaji Kompetitif</h5>
+                                <hr>
+                                <div style="display: flex; flex-direction: row;"><h5 style="margin-right: 45px;">4 hari yang lalu</h5> <h5>Penuh Waktu</h5></div>
+                            </div></div>
+                        <div class="lowonganbox"><div class="lowbox"> 
+                            <div class="imglow"><img src="../Home/download.png" alt=""></div> 
+                            <h5>PT Asuransi Jiwa Astra</h5> 
+                                <h3>IT Internal Auditor</h3> 
+                                <h5>Jakarta Selatan</h5> 
+                                <h5 style="color: #FF5722;">Gaji Kompetitif</h5>
+                                <hr>
+                                <div style="display: flex; flex-direction: row;"><h5 style="margin-right: 45px;">4 hari yang lalu</h5> <h5>Penuh Waktu</h5></div>
+                            </div></div>
+                        <div class="lowonganbox"><div class="lowbox"> 
+                            <div class="imglow"><img src="../Home/download.png" alt=""></div> 
+                            <h5>PT Asuransi Jiwa Astra</h5> 
+                                <h3>IT Internal Auditor</h3> 
+                                <h5>Jakarta Selatan</h5> 
+                                <h5 style="color: #FF5722;">Gaji Kompetitif</h5>
+                                <hr>
+                                <div style="display: flex; flex-direction: row;"><h5 style="margin-right: 45px;">4 hari yang lalu</h5> <h5>Penuh Waktu</h5></div></div></div>
+                        <div class="lowonganbox">
+                            <div class="lowbox"> 
+                            <div class="imglow"> <img src="../Home/download.png" alt=""></div> 
+                                <h5>PT Asuransi Jiwa Astra</h5> 
+                                <h3>IT Internal Auditor</h3> 
+                                <h5>Jakarta Selatan</h5> 
+                                <h5 style="color: #FF5722;">Gaji Kompetitif</h5>
+                                <hr>
+                                <div style="display: flex; flex-direction: row;"><h5 style="margin-right: 45px;">4 hari yang lalu</h5> <h5>Penuh Waktu</h5></div>
+                            </div>
+                        </div>
+                        <div class="lowonganbox"><div class="lowbox"> 
+                            <div class="imglow"><img src="../Home/download.png" alt=""></div> 
+                            <h5>PT Asuransi Jiwa Astra</h5> 
+                                <h3>IT Internal Auditor</h3> 
+                                <h5>Jakarta Selatan</h5> 
+                                <h5 style="color: #FF5722;">Gaji Kompetitif</h5>
+                                <hr>
+                                <div style="display: flex; flex-direction: row;"><h5 style="margin-right: 45px;">4 hari yang lalu</h5> <h5>Penuh Waktu</h5></div>
+                            </div></div>
+                        <div class="lowonganbox"><div class="lowbox"> 
+                            <div class="imglow"><img src="../Home/download.png" alt=""></div> 
+                            <h5>PT Asuransi Jiwa Astra</h5> 
+                                <h3>IT Internal Auditor</h3> 
+                                <h5>Jakarta Selatan</h5> 
+                                <h5 style="color: #FF5722;">Gaji Kompetitif</h5>
+                                <hr>
+                                <div style="display: flex; flex-direction: row;"><h5 style="margin-right: 45px;">4 hari yang lalu</h5> <h5>Penuh Waktu</h5></div>
+                            </div></div>
+                        <div class="lowonganbox"><div class="lowbox"> 
+                            <div class="imglow"><img src="../Home/download.png" alt=""></div> 
+                            <h5>PT Asuransi Jiwa Astra</h5> 
+                                <h3>IT Internal Auditor</h3> 
+                                <h5>Jakarta Selatan</h5> 
+                                <h5 style="color: #FF5722;">Gaji Kompetitif</h5>
+                                <hr>
+                                <div style="display: flex; flex-direction: row;"><h5 style="margin-right: 45px;">4 hari yang lalu</h5> <h5>Penuh Waktu</h5></div>
+                            </div></div>
+                        <div class="lowonganbox"><div class="lowbox"> 
+                            <div class="imglow"><img src="../Home/download.png" alt=""></div> 
+                            <h5>PT Asuransi Jiwa Astra</h5> 
+                                <h3>IT Internal Auditor</h3> 
+                                <h5>Jakarta Selatan</h5> 
+                                <h5 style="color: #FF5722;">Gaji Kompetitif</h5>
+                                <hr>
+                                <div style="display: flex; flex-direction: row;"><h5 style="margin-right: 45px;">4 hari yang lalu</h5> <h5>Penuh Waktu</h5></div>
+                            </div></div>
+                        <div class="lowonganbox"><div class="lowbox"> 
+                            <div class="imglow"><img src="../Home/download.png" alt=""></div> 
+                            <h5>PT Asuransi Jiwa Astra</h5> 
+                                <h3>IT Internal Auditor</h3> 
+                                <h5>Jakarta Selatan</h5> 
+                                <h5 style="color: #FF5722;">Gaji Kompetitif</h5>
+                                <hr>
+                                <div style="display: flex; flex-direction: row;"><h5 style="margin-right: 45px;">4 hari yang lalu</h5> <h5>Penuh Waktu</h5></div>
+                            </div></div>
+                        <div class="lowonganbox">
+                                <div class="lowbox"> 
+                                <div class="imglow"> <img src="../Home/download.png" alt=""></div> 
+                                    <h5>PT Asuransi Jiwa Astra</h5> 
+                                    <h3>IT Internal Auditor</h3> 
+                                    <h5>Jakarta Selatan</h5> 
+                                    <h5 style="color: #FF5722;">Gaji Kompetitif</h5>
+                                    <hr>
+                                    <div style="display: flex; flex-direction: row;"><h5 style="margin-right: 45px;">4 hari yang lalu</h5> <h5>Penuh Waktu</h5></div>
+                                </div>
+                            </div>
+                            <div class="lowonganbox">
+                                <div class="lowbox"> 
+                                <div class="imglow"> <img src="../Home/download.png" alt=""></div> 
+                                    <h5>PT Asuransi Jiwa Astra</h5> 
+                                    <h3>IT Internal Auditor</h3> 
+                                    <h5>Jakarta Selatan</h5> 
+                                    <h5 style="color: #FF5722;">Gaji Kompetitif</h5>
+                                    <hr>
+                                    <div style="display: flex; flex-direction: row;"><h5 style="margin-right: 45px;">4 hari yang lalu</h5> <h5>Penuh Waktu</h5></div>
+                                </div>
+                            </div>
+                            <div class="lowonganbox">
+                                <div class="lowbox"> 
+                                <div class="imglow"> <img src="../Home/download.png" alt=""></div> 
+                                    <h5>PT Asuransi Jiwa Astra</h5> 
+                                    <h3>IT Internal Auditor</h3> 
+                                    <h5>Jakarta Selatan</h5> 
+                                    <h5 style="color: #FF5722;">Gaji Kompetitif</h5>
+                                    <hr>
+                                    <div style="display: flex; flex-direction: row;"><h5 style="margin-right: 45px;">4 hari yang lalu</h5> <h5>Penuh Waktu</h5></div>
+                                </div>
+                            </div>    
+                            
+                        </div><div style="background-color: #FF5722; color: white;" class="nom">1</div><div class="nom">2</div><div class="nom">3</div><div class="nom">>></div>
+                    </div>
+                    
+                </div>
+                <div class="lowongan" style="color: white; background-color: #222831; padding: 5vw; flex-direction: column;">
+                    <h1 style="margin: 0; font-family: 'poppinsb';">Caker</h1>
+                    <h4 style="margin: 0;font-family: 'poppinst';">Jl.namajalan, kota, provinsi </h4>
+                    <div class="foots">
+                        <h4 class="foota" style="margin: 50px 0 0 0; width: 100%;">Telp: +62 8123456789</h4>
+                        <h4 class="foota" style="margin: 0; width: 100%;">Call Center: +62 8123456789 </h4>
+                        <div class="foota" style=" justify-content: end;"><h4 style="margin: 50px 0 0 0;">Tentang Kami</h4>
+                        <h4 style="margin: 50px 0 0 20px;">Hubungi Kami</h4> </div>
+                    
+                    </div>
+                    <hr style="width: 100%;">
+                    <h4 style="text-align: center;">© 2019 - 2023 Caker® PT Anda.</h4>
+
+    <script src="java.js"></script>
+</body>
+</html>

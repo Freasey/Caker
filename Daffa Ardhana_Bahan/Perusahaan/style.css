@@ -1,0 +1,628 @@
+@font-face {
+    font-family: 'poppinsb';
+    src: url(../Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: 'poppinsr';
+    src: url(../Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'poppinst';
+    src: url(../Poppins/Poppins-Thin.ttf);
+}
+h1{
+    font-family: 'poppinsb';
+    margin: 0;
+}
+h2{
+    margin: 0;
+}
+h3{
+    margin: 0;
+}
+h4{font-family: 'poppinst';
+    margin: 0;
+}
+h5{
+    margin: 0;
+}
+
+html, body{
+    padding: 0;
+    background: url(../Home/069372200_1662512644-Khaby-2.webp) center center no-repeat fixed;
+    background-size: cover;
+    font-family: 'poppinsr' ;
+    background-size: cover;
+    margin: 0;
+    font-family: 'poppinsr' ;
+}
+nav{
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 60px;
+    background: #222831;
+    
+    transition: 0.5s all;
+}
+.turu{
+    height: 60px;
+}
+nav li{
+    cursor: pointer;
+    color: white;
+}
+.navli li:hover{
+    color: #FF5722;
+}
+
+nav h1{
+    font-family: 'poppinsb';
+    margin: 0 30px 0 0;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.navli{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.navli li{
+    list-style: none;
+    font-family: 'poppinsr';
+    padding: 18px 12px;
+    
+}
+nav ul{
+    
+    display: flex;
+    margin: 0;
+}
+
+.navliend{
+    padding: 0;
+}
+.navliend li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 60px;
+    list-style: none;
+    font-family: 'poppinsb';
+    font-size: 15px;
+    color: white;
+}
+.slider{
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
+    display: none;
+    flex-direction: column;
+}
+.slider hr{
+    transform: translate(0,0) rotate(0deg);
+    transition: 0.5s all;
+    margin: 6px;
+    width: 36px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+#slidernav{
+    transition: 0.5s;
+    display: none;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    justify-content: end;
+}
+#slidernav ul{
+    transition: 0.5s all;
+    transform: translate(500px, 0);
+    margin: 0;
+    background-color: #FF5722;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#slidernav li{
+    padding: 30px 10px 30px 10px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    list-style: none;
+    font-size: 30px;
+}
+#masuk{
+    transition: 0.5s;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    justify-content: center;
+}
+#masuk ul{
+    border-radius: 20px;
+    width: 80%;
+    transition: 0.5s all;
+    transform: translate(0, 0);
+    margin: 65px 0;
+    background-color: white;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#masuk h1{
+    font-family: 'poppinsb';
+    margin: 0 0 0 0;
+}
+#masuk h3{
+    margin: 0;
+    font-size: 30px;
+    font-family: 'poppinst';
+}
+#logs h3{
+    margin: 0;
+    font-size: 30px;
+    font-family: 'poppinsb';
+}
+#masuk h4{
+    font-size: 20px;
+    font-family: 'poppinst';
+    margin: 0 20px;
+}
+#masuk li{
+    margin: 0;
+    color: #2D4059;
+    cursor: default;
+    text-align: center;
+    list-style: none;
+    font-size: 30px;
+}
+#masuk hr{
+    width: 200px;
+    height: 1px;
+    background-color: #2D4059;
+}
+#masuk img{
+    width: 40px;
+    margin: 10px 20px;
+}
+#silang{
+    transform: translate(0,-260px); 
+    position: absolute;
+}
+.pass{
+    margin: 10px 0;
+    font-size: 20px;
+    background-color:#f9fafc;
+    border: 1px solid gray;
+    width: 300px;
+    height: 50px;
+    outline: none;
+    border-radius: 5px;
+}
+.pass::placeholder{
+    color: gainsboro;
+}
+#logs{
+    color: white;
+    margin: 10px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #FF5722;
+}
+/* Nav */
+/* Awal */
+.awal{
+    background: url(bgform.jpg) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.cons{
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.coms{
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.awal h1{
+
+    font-size: 40px;
+}
+.awal h4{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d4059d4;
+    height: fit-content;
+    width: 850px;
+    border-radius: 20px;
+    padding: 40px 0;
+}
+.formin{
+    width: 850px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.formin input{
+    z-index: 10;
+    color: white;
+    width: 280px;
+    height: 20px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.formin label{
+    z-index: 1;
+    position: absolute;
+    transition: 0.5s;
+    color: white;
+    font-size: 15px;
+}
+.formin input:focus ~ label,
+.formin input:valid ~ label{  
+    font-size: 12px; 
+    margin-top: -20px;
+    color:#FF5722;
+}
+
+.ketik{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 40px;
+}
+.tombol{
+    background-color: #FF5722;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* box */
+.box{
+    background-color: #f9fafc;
+    width: 100%;
+    height: 100vh;
+}
+.box h1{
+    font-size: 40px;
+    color: #2D4059;
+}
+.box h4{
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #2D4059;
+}
+
+
+/* lingkaran */
+.milkam{
+    display: flex;
+}
+.mulokam{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: min-content;
+    margin: 0 20px;
+}
+.mulokam h2{
+    text-align: center;
+    color: #2D4059;
+}
+.mulokam h4{
+    text-align: center;
+}
+.mulakam{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: min-content;
+    margin: 0 20px;
+}
+.mulakam h2{
+    text-align: center;
+    color: #2D4059;
+}
+.mulakam h4{
+    text-align: center;
+}
+.bulet{
+    width: 200px;
+    height: 200px;
+    background-color: #2D4059;
+    margin: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bulet img{
+    width: 100px;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+.klab{
+    padding: 30px;
+    width: 200px;
+    height: 200px;
+    background-color: #2D4059;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.klab h2{
+    color: #f9fafc;
+}
+.klab h4{
+    color: #f9fafc;
+}
+.bulsm{
+    width: 100px;
+    height: 100px;
+    background-color: #f9fafc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bulsm img{
+    width: 50px;
+    height: auto;
+}
+.bulsm h2{
+    color: #2D4059;
+}
+.ulasan{
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+.ulbox{
+    padding: 30px;
+    flex-direction: column;
+    display: flex;
+    width: 250px;
+    height: 200px;
+    background-color:#f9fafc ;
+    margin: 20px;
+}
+.ulbox h2{
+    color: #2D4059;
+    font-size: 15px;
+}
+.ulbox h4{
+    margin: 0;
+    color: #2D4059;
+    font-size: 15px;
+}
+.ulbox img{
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+.prof{
+    height: 100%;
+    align-items: end;
+    display: flex;
+    flex-direction: row;
+}
+.inprof{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+/* footer */
+.blackopa{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.lowongan{
+    position: relative;
+    width:auto;
+    height: fit-content;
+    background-color: rgb(241, 241, 241);
+    padding: 5vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.foots{
+    display: flex; 
+    height: fit-content;
+    flex-direction: column;
+}
+.foota{
+    font-family: 'poppinst';
+    display: flex;
+     width: 100%;
+}
+
+
+
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+@media only screen and (max-width: 1060px) {
+    
+    .bulet{
+        width: 150px;
+        height: 150px;
+    }
+    .bulet img{
+        width: 75px;
+        height: auto;
+    }
+    #masuk hr{
+        display: none;
+    }
+
+    nav li{ display: none !important;
+    }
+    .slider{
+        display: inline;
+    }
+    .navliend li{
+        padding: 0;
+    }
+    #slidernav li{
+        font-size: 20px;
+    }
+    .form{
+        width: 100%;
+    }
+    .cons{
+        padding: 0 40px;
+    }
+    .klab{
+        width: 150px;
+    }
+    .klab h2{
+        font-size: 20px;
+    }
+    .klab h4{
+        font-size: 15px;
+    }
+    .mulakam{
+        margin: 0;
+    }
+  }
+  @media only screen and (max-width: 780px) {
+    .mulakam{
+        flex-direction: row;
+    }
+    .box{
+        height: fit-content;
+    }
+    .bulet{
+        width: 200px;
+        height: 200px;
+    }
+    .bulet img{
+        width: 100px;
+        height: auto;
+    }
+    .pass{
+        width: 240px;
+    }
+    .formin input{
+        width: 200px;
+    }
+    
+    .foots{
+        display: flex; 
+        flex-direction: column;
+        height: fit-content;
+    }
+    .milkam{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 630px){
+    .awal{
+        height: 1140px;
+        background-position-x: -950px;
+    }
+    .formin{
+        flex-direction: column;
+        width: 100%;
+    }
+    .formin input{
+        width: 80%;
+    }
+    .ketik{
+        width: 100%;
+    }
+    .cons{
+        align-items: start;
+    }
+}
+
+
+
+
+
+
+
+
+  @media only screen and (max-height: 700px){
+    #masuk h1{
+        font-family: 'poppinsb';
+        margin: 0 0 0 0;
+        font-size: 35px;
+    }
+    #masuk h3{
+        margin: 0;
+        font-size: 30px;
+        font-family: 'poppinst';
+    }
+    #logs h3{
+        margin: 0;
+        font-size: 25px;
+        font-family: 'poppinsb';
+    }
+    #masuk h4{
+        font-size: 20px;
+        font-family: 'poppinst';
+        margin: 0 20px;
+    }
+    #silang{
+        transform: translate(0,-220px); 
+        position: absolute;
+    }
+    .pass{
+        width: 240px;
+    }
+  }

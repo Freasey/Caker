@@ -1,0 +1,432 @@
+@font-face {
+    font-family: 'poppinsb';
+    src: url(../Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: 'poppinsr';
+    src: url(../Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'poppinst';
+    src: url(../Poppins/Poppins-Thin.ttf);
+}
+
+
+h1{font-family: 'poppinsb';
+    margin: 0;
+}
+h2{
+    margin: 0;
+}
+h3{
+    margin: 0;
+}
+h4{font-family: 'poppinst';
+    margin: 0;
+}
+html{
+    font-family: 'poppinsr' ;
+    background: #2D4059;
+    background-size: cover;
+    margin: 0;
+    overflow:scroll;
+    overflow-x: hidden;
+}
+body{
+    font-family: 'poppinsr' ;
+    margin: 0;
+}
+nav{
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 60px;
+    background: #222831;
+    
+    transition: 0.5s all;
+}
+.turu{
+    height: 60px;
+}
+nav li{
+    cursor: pointer;
+    color: white;
+}
+.navli li:hover{
+    color: #FF5722;
+}
+
+nav h1{
+    font-family: 'poppinsb';
+    margin: 0 30px 0 0;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.navli{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.navli li{
+    list-style: none;
+    font-family: 'poppinsr';
+    padding: 18px 12px;
+    
+}
+nav ul{
+    
+    display: flex;
+    margin: 0;
+}
+
+.navliend{
+    padding: 0;
+}
+.navliend li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 60px;
+    list-style: none;
+    font-family: 'poppinsb';
+    font-size: 15px;
+    color: white;
+}
+.slider{
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
+    display: none;
+    flex-direction: column;
+}
+.slider hr{
+    transform: translate(0,0) rotate(0deg);
+    transition: 0.5s all;
+    margin: 6px;
+    width: 36px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+#slidernav{
+    transition: 0.5s;
+    display: none;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    justify-content: end;
+}
+#slidernav ul{
+    transition: 0.5s all;
+    transform: translate(500px, 0);
+    margin: 0;
+    background-color: #FF5722;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#slidernav li{
+    padding: 30px 10px 30px 10px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    list-style: none;
+    font-size: 30px;
+}
+#masuk{
+    transition: 0.5s;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    justify-content: center;
+}
+#masuk ul{
+    border-radius: 20px;
+    width: 80%;
+    transition: 0.5s all;
+    transform: translate(0, 0);
+    margin: 65px 0;
+    background-color: white;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#masuk h1{
+    font-family: 'poppinsb';
+    margin: 0 0 0 0;
+}
+#masuk h3{
+    margin: 0;
+    font-size: 30px;
+    font-family: 'poppinst';
+}
+#logs h3{
+    margin: 0;
+    font-size: 30px;
+    font-family: 'poppinsb';
+}
+#masuk h4{
+    font-size: 20px;
+    font-family: 'poppinst';
+    margin: 0 20px;
+}
+#masuk li{
+    margin: 0;
+    color: #2D4059;
+    cursor: default;
+    text-align: center;
+    list-style: none;
+    font-size: 30px;
+}
+#masuk hr{
+    width: 200px;
+    height: 1px;
+    background-color: #2D4059;
+}
+#masuk img{
+    width: 40px;
+    margin: 10px 20px;
+}
+#silang{
+    transform: translate(0,-260px); 
+    position: absolute;
+}
+.pass{
+    margin: 10px 0;
+    font-size: 20px;
+    background-color:#f9fafc;
+    border: 1px solid gray;
+    width: 300px;
+    height: 50px;
+    outline: none;
+    border-radius: 5px;
+}
+.pass::placeholder{
+    color: gainsboro;
+}
+#logs{
+    color: white;
+    margin: 10px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #FF5722;
+}
+/* Nav */
+/* Box */
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.boxin{
+    width: 720px;
+    height: 500px;
+    background-color: #FF5722;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.bomg{
+    border-radius: 0 20px 20px 0;
+    background: url(orang.jpg) center center no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 100%;
+}
+
+.boxot{
+    width: auto;
+    height: 100%;
+    color: white;
+}
+
+.boxas{
+    padding: 20px 0 0 40px;
+}
+.form{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.formin{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.formin input{
+    z-index: 10;
+    color: white;
+    width: 320px;
+    height: 20px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.formin label{
+    z-index: 1;
+    position: absolute;
+    transition: 0.5s;
+    color: white;
+    font-size: 14px;
+}
+.formin input:focus ~ label,
+.formin input:valid ~ label{  
+    font-size: 12px; 
+    margin-top: -15px;
+    color:#2D4059;
+}
+
+.ketik{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 30px;
+}
+.tombol{
+    margin: 10px auto 0 auto;
+    background-color: #2D4059;
+    padding: 10px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.opsi{
+    width: 470px; 
+    height: 50px; 
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.opsi img{
+    margin: 5px 20px;
+    width: 30px;
+    height: auto;
+}
+h5{
+    margin-top: 5px;
+}
+
+
+
+
+
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+@media only screen and (max-width: 1060px) {
+    .detail{
+        flex-direction: column;
+    }
+    .sider{
+        height: fit-content;
+        margin: 50px 20px 50px 20px;
+    }
+    .sider h2{
+        font-size: 20px;
+    }
+    .sider h4{
+        font-size: 15px;
+    }
+    #logs1{
+        display: none;
+    }
+    #masuk hr{
+        display: none;
+    }
+
+    nav li{ display: none !important;
+    }
+    .slider{
+        display: inline;
+    }
+    .navliend li{
+        padding: 0;
+    }
+    .filterbar{
+        display: flex;
+        flex-direction: column;
+    }
+    #slidernav li{
+        font-size: 20px;
+    }
+
+  }
+  @media only screen and (max-width: 750px){
+    .bomg{
+        display: none;
+    }
+    .boxot{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .opsi{
+        width: 100%;
+    }
+    .boxas{
+        text-align: center;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .formin input{
+        width: 75vw;
+    }
+    
+    
+  }
+  @media only screen and (max-height: 700px){
+    #masuk h1{
+        font-family: 'poppinsb';
+        margin: 0 0 0 0;
+        font-size: 35px;
+    }
+    #masuk h3{
+        margin: 0;
+        font-size: 30px;
+        font-family: 'poppinst';
+    }
+    #logs h3{
+        margin: 0;
+        font-size: 25px;
+        font-family: 'poppinsb';
+    }
+    #masuk h4{
+        font-size: 20px;
+        font-family: 'poppinst';
+        margin: 0 20px;
+    }
+    #silang{
+        transform: translate(0,-220px); 
+        position: absolute;
+    }
+    .pass{
+        width: 240px;
+    }
+  }
