@@ -268,7 +268,7 @@ nav ul{
     padding: 40px 0;
 }
 .formin{
-    width: 850px;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: row;
