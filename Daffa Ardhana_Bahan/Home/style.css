@@ -438,12 +438,15 @@ nav ul{
 .juds{
     align-items: center;
     margin: 0;
-    font-size: 20px;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
+.juds h2{
+    font-size: 18px;
+}
 .juds h4{
+    font-size: 15px;
     color: #2D4059;
 }
 .juds img{
