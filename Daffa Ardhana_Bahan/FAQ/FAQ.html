@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1 style="margin-left: 40px;">Caker</h1>     
+        <ul class="navli">
+            <a href="../../Daffa Ardhana_Website.html"><li>Beranda</li></a>
+            <a href="../Kategori Pencarian Lowogan/Kategori.html"><li>Cari Lowongan</li></a> 
+            <a href="../Perusahaan/perusahaan.html"><li>Sebagai Perusahaan</li></a>
+        </ul>
+        <ul class="navliend">
+            <a href="../Daftar/daftar.html"><li style="background-color: #FF5722;">Daftar</li></a>
+            <li onclick="masukon()" id="daftar" >Masuk</li>
+            <div onclick="slide()" class="slider">
+                <hr> <hr> <hr>
+            </div>
+        </ul>
+    </nav>
+    <div id="slidernav">
+        <ul>
+            <a href="../../Daffa Ardhana_Website.html"><li style="margin-top: 70px;">Beranda</li></a>
+            <a href="../Kategori Pencarian Lowogan/Kategori.html"><li>Cari Lowongan</li></a> 
+            <a href="../Perusahaan/perusahaan.html"><li>Sebagai Perusahaan</li></a>
+            <a style="width: 100%;"  href="../Daftar/daftar.html"><li style="width: 100%; box-shadow: inset 0 0 0 5px #222831; padding: 30px 0 30px 0;">Daftar</li></a>
+            <li onclick=" slideroff();masukon();" style="width: 100%; padding: 30px 0 30px 0; background-color: #222831;">Masuk</li>
+        </ul>
+    </div>
+    <div id="masuk">
+        <ul><img onclick="masukoff()" id="silang"  src="../Home/cross-button.png" alt="">
+            <li><h1>Caker</h1></li>
+            <li><h3>Login</h3></li>
+            <li><input type="text" name="username" class="pass" placeholder="Username"></li>
+            <li><input type="text" name="pass" class="pass"placeholder="Password"></li>           
+            <li><div id="logs"><h3>Masuk</h3></div></li>
+            <div style="display: flex; align-items: center;"><hr> <h4>Opsi lain</h4> <hr></div>
+            <div style="display: flex; align-items: center;"><img src="../Home/google.png" alt=""> <img src="../Home/facebook.png" alt=""></div>
+        </ul>
+    </div>
+    <section class="awal">
+        <div class="box">
+            <h1>Apa yang bisa kami bantu?</h1>
+            <div class="inscar"><input type="text" placeholder="Apa masalah anda?"> <div class="cari">Cari</div></div>
+        </div>
+        <div class="cons">
+            <div class="kotakfaq">
+                    <div style="border-radius: 9px 9px 0 0;" class="isifaq"> <h3>Apa itu FAQ?</h3> <img src="../Home/arrow.png" alt=""></div>
+                    <div class="jfaq">
+                        FAQ adalah singkatan dari Frequently Asked Questions atau pertanyaan yang sering diajukan. Halaman FAQ biasanya berisi kumpulan pertanyaan dan jawaban yang sering ditanyakan oleh pengguna.
+                    </div>
+            </div>
+            <div class="kotakfaq">
+                <div  class="isifaq"> <h3>Bagaimana cara melamar di Caker</h3> <img src="../Home/arrow.png" alt=""></div>
+                <div class="jfaq">
+                    1. Mendaftar akun: Klik tombol daftar diatas <br>
+                    2. Mengisi profil: Setelah mendaftar, lengkapi profil Anda dengan informasi yang dibutuhkan seperti pengalaman kerja, pendidikan, dan keterampilan. Pastikan profil Anda menarik dan sesuai dengan posisi yang Anda inginkan.<br>
+                    3. Mencari lowongan: Gunakan fitur pencarian di situs pencari kerja untuk menemukan lowongan pekerjaan yang sesuai dengan kriteria Anda. Anda juga dapat mendaftar untuk menerima pemberitahuan email tentang lowongan pekerjaan baru yang sesuai dengan kriteria Anda.<br>
+                    4. Melamar: Setelah menemukan lowongan pekerjaan yang sesuai, buat surat lamaran dan kirimkan melalui situs pencari kerja tersebut. Pastikan surat lamaran Anda menarik dan sesuai dengan posisi yang Anda lamar.<br>
+                </div>
+            </div>
+            <div class="kotakfaq">
+                <div  class="isifaq"> <h3>Bagaimana cara membuat profil yang menarik di situs pencari kerja?</h3> <img src="../Home/arrow.png" alt=""></div>
+                <div class="jfaq">
+                    Untuk membuat profil yang menarik di situs pencari kerja, pastikan Anda melengkapi profil Anda dengan informasi yang dibutuhkan seperti pengalaman kerja, pendidikan, dan keterampilan. Gunakan kata-kata yang tepat dan jelas untuk menjelaskan pengalaman dan keterampilan Anda. Jangan lupa untuk menambahkan foto profil yang profesional dan menarik.
+                </div>
+            </div>
+                <div class="kotakfaq">
+                    <div  class="isifaq"> <h3>Bagaimana cara mencari lowongan pekerjaan yang sesuai dengan kriteria saya?</h3> <img src="../Home/arrow.png" alt=""></div>
+                    <div class="jfaq">
+                        Gunakan fitur pencarian di situs pencari kerja untuk menemukan lowongan pekerjaan yang sesuai dengan kriteria Anda. Anda dapat memfilter hasil pencarian berdasarkan lokasi, industri, gaji, dan lain-lain. Pastikan Anda membaca deskripsi pekerjaan dengan cermat untuk memastikan bahwa pekerjaan tersebut sesuai dengan kriteria Anda.
+                    </div>
+                    </div>
+            <div class="kotakfaq">
+                <div  class="isifaq"> <h3>Bagaimana cara mengetahui apakah sebuah lowongan pekerjaan asli atau palsu?</h3> <img src="../Home/arrow.png" alt=""></div>
+                <div class="jfaq">
+                    Pastikan Anda melakukan riset tentang perusahaan yang menawarkan lowongan pekerjaan tersebut. Periksa apakah perusahaan tersebut memiliki situs web resmi dan informasi kontak yang jelas. Jangan memberikan informasi pribadi atau uang sebelum Anda yakin bahwa lowongan pekerjaan tersebut asli.
+                </div>
+            </div>
+            <div class="kotakfaq">
+                <div  class="isifaq"> <h3>Bagaimana cara menulis surat lamaran yang menarik?</h3> <img src="../Home/arrow.png" alt=""></div>
+                <div class="jfaq">
+                    Untuk menulis surat lamaran yang menarik, pastikan Anda menjelaskan mengapa Anda tertarik dengan posisi tersebut dan bagaimana pengalaman dan keterampilan Anda sesuai dengan persyaratan pekerjaan. Jangan lupa untuk menambahkan kalimat penutup yang sopan dan mengucapkan terima kasih atas kesempatan yang diberikan
+                </div>
+                </div>
+                <div class="kotakfaq">
+                    <div  class="isifaq"> <h3>Bagaimana cara mempersiapkan diri untuk wawancara kerja?</h3> <img src="../Home/arrow.png" alt=""></div>
+                    <div class="jfaq">
+                        Untuk mempersiapkan diri untuk wawancara kerja, pastikan Anda melakukan riset tentang perusahaan dan posisi yang Anda lamar. Persiapkan jawaban untuk pertanyaan umum seperti “ceritakan tentang diri Anda” dan “apa kelebihan dan kelemahan Anda”. Jangan lupa untuk berpakaian sopan dan tiba tepat waktu.
+                    </div>
+            </div>
+            <div class="kotakfaq">
+                <div  class="isifaq"> <h3>Bagaimana cara mengetahui apakah saya lolos seleksi administrasi?</h3> <img src="../Home/arrow.png" alt=""></div>
+                <div class="jfaq">
+                    Biasanya, perusahaan akan mengirimkan email atau telepon kepada Anda untuk memberitahu apakah Anda lolos seleksi administrasi atau tidak. Jika Anda belum menerima kabar setelah beberapa waktu, Anda dapat menghubungi perusahaan untuk menanyakan status lamaran Anda.
+                </div>
+            </div>
+            <div class="kotakfaq">
+                <div  class="isifaq"> <h3>Bagaimana cara mengetahui apakah saya lolos seleksi wawancara? </h3> <img src="../Home/arrow.png" alt=""></div>
+                <div class="jfaq">
+                    Perusahaan akan mengirim informasi itu kepada anda melalui email atau anda bisa mengeceknya melalui situs ini
+                </div>
+                </div>
+                <div class="kotakfaq">
+                    <div  class="isifaq"> <h3>Bagaimana cara menghubungi perusahaan</h3> <img src="../Home/arrow.png" alt=""></div>
+                    <div class="jfaq">
+                        Setelah melamar anda akan di informasikan oleh perusahaan melalui email atau situs ini, dari situlah anda dapat memulai percakapan dengan pihak perusahaan
+                    </div>
+            </div>
+            <div class="kotakfaq">
+                <div style="border-radius: 0 0 9px 9px;"  class="isifaq"> <h3>Apa itu Caker</h3> <img src="../Home/arrow.png" alt=""></div>
+                <div style="border-radius: 0 0 9px 9px;" class="jfaq">
+                    Caker adalah perusahaan yang bergerak di bidang jasa pengembangan karir. Perusahaan ini berasal dari Indonesia yang membantu para fresh graduate untuk mencari pekerjaan sesuai skill dan passion yang dimiliki.
+                </div>
+            </div>
+        </div>
+        <div style="display: flex;"><div style="background-color: #2D4059; color: white;" class="nom">1</div><div class="nom">2</div><div class="nom">3</div><div class="nom">>></div></div>
+
+            </section>
+            
+    </section>
+    <div class="lowongan" style="color: white; background-color: #222831; padding-bottom: 0; flex-direction: column;">
+        <h1 style="margin: 0; font-family: 'poppinsb';">Caker</h1>
+        <h4 style="margin: 0;font-family: 'poppinst';">Jl.namajalan, kota, provinsi </h4>
+        <div class="foots">
+            <h4 class="foota" style="margin: 50px 0 0 0; width: 100%;">Telp: +62 8123456789</h4>
+            <h4 class="foota" style="margin: 0; width: 100%;">Call Center: +62 8123456789 </h4>
+            <div class="foota" style=" justify-content: end;"><h4 style="margin: 50px 0 0 0;">Tentang Kami</h4>
+            <h4 style="margin: 50px 0 0 20px;">Hubungi Kami</h4> </div>
+        
+        </div>
+        <hr style="width: 100%;">
+        <h4 style="text-align: center;">© 2019 - 2023 Caker® PT Anda.</h4>
+
+
+
+    
+
+    <script src="java.js"></script>
+</body>
+</html>
